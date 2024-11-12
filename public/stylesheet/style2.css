@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    width: 100vw;
+    height: unset;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: #18181b;
+    padding: 2.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.link {
+    margin-bottom: 2.5rem;
+}
+
+.a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.users {
+    display: flex;
+    /* flex */
+    gap: 0.5rem;
+    /* gap-2 (2 * 0.25rem) */
+    flex-wrap: wrap;
+    /* flex-wrap */
+}
+
+.user {
+    width: 18rem;
+    /* w-72 (72 * 0.25rem) */
+    padding: 1rem;
+    /* p-4 (4 * 0.25rem) */
+    background-color: #27272a;
+    /* bg-zinc-800 */
+    border-radius: 0.5rem;
+    /* rounded-lg */
+}
+
+.container {
+    width: 100%;
+    /* w-full */
+    height: 18rem;
+    /* h-72 (72 * 0.25rem) */
+    border-radius: 0.5rem;
+    /* rounded-lg */
+    background-color: #ef4444;
+    /* bg-red-500 */
+}
+
+.img {
+    width: 100%;
+    /* w-full */
+    height: 100%;
+    /* h-full */
+    object-fit: cover;
+    overflow: hidden;
+    /* overflow-hidden */
+    object-position: top;
+    /* object-top */
+}
+
+.h3 {
+    font-size: 1.75rem;
+    letter-spacing: -0.05em;
+    margin-top: 0.75rem;
+}
+
+.h5 {
+    color: #71717a;
+}
+
+.linkss {
+    display: flex;
+    /* gap: 5rem; */
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+
+.edit {
+    color: #e4e4e7;
+    text-decoration: none;
+}
+
+.delete {
+    color: #fecaca;
+    text-decoration: none;
+}
+
+.backup-text {
+    color: #71717a;
+}

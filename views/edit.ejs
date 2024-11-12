@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet/style1.css">
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- external css -->
+    <link rel="stylesheet" href="/stylesheet/style2.css">
+</head>
+
+<body>
+    <div class="w-full h-full bg-zinc-900 p-10 text-white">
+        <div class="mb-10">
+            <a href="/" class="text-blue-500">back To Home Page</a>
+        </div>
+        <h1 class="text-3xl tracking-tighter mb-5 , ">Update Users</h1>
+        <form action="/create" method="post">
+            <input type="text" class="px-5 py-3 border-2 border-zinc-800 rounded-lg bg-transparent outline-none" placeholder="Name" name="name">
+            <input type="text" class="px-5 py-3 border-2 border-zinc-800 rounded-lg bg-transparent outline-none" placeholder="Email" name="email">
+            <input type="text" class="px-5 py-3 border-2 border-zinc-800 rounded-lg bg-transparent outline-none" placeholder="Image-URL" name="image">
+            <input type="submit" value="Create User" class="px-5 py-2 bg-blue-500 rounded-md ml-3">
+        </form>
+    </div>
+
+</body>
+
+</html>
