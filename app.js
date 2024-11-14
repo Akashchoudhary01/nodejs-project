@@ -37,10 +37,18 @@ app.get('/delete/:id', async(req, res) => {
 })
 
 // edit user
-app.get('/edit/:userid', async(req, res) => {
-    let User = await userModel.findOne({ _id: req.params.userid });
-    res.render("/edit", { User });
-});
+app.get('/edit/:userid' , async(req,res) => {
+    let user = await userModel.findOne({ _id: req.params.userid});
+    res.render("edit" , {user});
+})
+
+// update
+app.post('/update/:userid' , async(req,res) => {
+    let{name , email , image } = req.body;
+    let user = await userModel.findOneAndUpdate({ _id: req.params.userid} , {name , email , image} , {new:true});
+    res.redirect("/read");
+})
+
 
 app.listen(8000, () => {
     console.log("Server Running In Port Number 8000");
